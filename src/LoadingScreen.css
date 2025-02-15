@@ -4,6 +4,10 @@
   --border-color-primary: rgba(219, 126, 4, 0.699);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: 'Munro';
   src: url('./assets/fonts/Munro-2LYe.ttf') format('ttf');
@@ -13,6 +17,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Munro';
 }
 
 body {
@@ -42,6 +47,7 @@ img {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  overflow: auto;
 }
 
 .heading {
