@@ -44,7 +44,7 @@ function LoadingScreen() {
               width={300}
             />
             </div>
-            <h1 className='heading'>please follow the instructions listed below!</h1>
+            <h1 className='heading'>scroll down and please follow the instructions listed below :)</h1>
             <h2 className='list-item'>- Dress nicely! Fancy dinner incoming :D</h2>
             <h2 className='list-item'>- Don't eat too much before! Gotta save your stomach :p</h2>
             <h2 className='list-item'>- Be ready by 6:00PM tonight!</h2>
