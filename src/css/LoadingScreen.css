@@ -4,13 +4,9 @@
   --border-color-primary: rgba(219, 126, 4, 0.699);
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 @font-face {
   font-family: 'Munro';
-  src: url('./assets/fonts/Munro-2LYe.ttf') format('ttf');
+  src: url('/src/assets/fonts/Munro-2LYe.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -35,46 +31,11 @@ img {
   height: auto;
 }
 
-#instructions {
-  font-family: 'Munro';
-  color: var(--text-color);
-  width: 80vh;
-  height: 80vh;
-  padding: 5%;
-  border: 4px dashed var(--border-color-primary);
-  border-radius: 5%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+#main-container {
+  border: 1px solid red;
+  width: 95vw;
+  height: 100vh;
   text-align: center;
-  overflow: auto;
-}
-
-.heading {
-  color: rgb(135, 4, 196);
-  width: 100%;
-  margin-bottom: 10%;
-  font-size: 2.5rem;
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
-}
-
-.list-item {
-  font-size: 2.25rem;
-  color: rgb(255, 196, 45);
-}
-
-#drifloon-left {
-  position: absolute;
-  left: 10%;
-  top: 35%;
-}
-
-#drifloon-right {
-  position: absolute;
-  right: 10%;
-  top: 35%;
-  transform: scaleX(-1);
 }
 
 /* Animations */
@@ -84,6 +45,16 @@ img {
   50% { transform: rotate(720deg); } /* 2 full rotations */
   100% { transform: rotate(720deg); }
 }
+
+@keyframes wobble {
+  0% { transform: translateX(0%); } 
+  15% { transform: translateX(-25%) rotate(-5deg); } 
+  30% { transform: translateX(20%) rotate(3deg); } 
+  45% { transform: translateX(-15%) rotate(-3deg); } 
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); } 
+} 
 
 .spin-twice-pause {
   animation: spin-twice-pause 2s ease-in-out infinite;

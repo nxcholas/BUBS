@@ -5,4 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/BUBS",
+  build: {
+    assetsInclude: ['**/*.woff', '**/*.woff2', '**/*.ttf'], // Include font files
+  },
 });
