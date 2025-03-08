@@ -45,10 +45,10 @@ function LoadingScreen() {
             />
             </div>
             <h1 className='heading'>scroll down and please follow the instructions listed below :)</h1>
-            <h2 className='list-item'>- Dress nicely! Fancy dinner incoming :D</h2>
-            <h2 className='list-item'>- Don't eat too much before! Gotta save your stomach :p</h2>
-            <h2 className='list-item'>- Be ready by 6:00PM tonight!</h2>
-            <h2 className='list-item'>- save this website for future use kekekeke</h2>
+            <h2 className='list-item'>- dress cute and comfy!</h2>
+            <h2 className='list-item'>- make sure to eat breakfast, long activity ahead . . . :p</h2>
+            <h2 className='list-item'>- be ready by 12PM!</h2>
+            <h2 className='list-item'>- dinner around 7 hehe</h2>
           </div>
         )
       )}
